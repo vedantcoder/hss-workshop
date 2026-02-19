@@ -1,0 +1,4 @@
+- Verified Next.js (App Router) + TypeScript + Tailwind project scaffold.
+- Implemented single-page, content-driven workshop website.
+- All event content lives in src/data/content.ts.
+- Commands should be run via cmd on Windows (e.g., cmd /c "npm run dev").
