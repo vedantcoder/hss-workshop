@@ -10,9 +10,18 @@ export function HeroSection() {
       aria-label="Event overview"
     >
       {/* Decorative blobs */}
-      <div className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" aria-hidden />
-      <div className="pointer-events-none absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-yellow-300/20 blur-3xl" aria-hidden />
-      <div className="pointer-events-none absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/10 blur-2xl" aria-hidden />
+      <div
+        className="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-yellow-300/20 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-300/10 blur-2xl"
+        aria-hidden
+      />
 
       <div className="relative mx-auto max-w-5xl px-6 py-12 sm:py-16">
         <FadeIn>
@@ -57,7 +66,10 @@ export function HeroSection() {
               size="lg"
               className="bg-white font-semibold text-blue-700 shadow-xl hover:bg-blue-50"
             >
-              <a href="#register" aria-label={content.hero.secondaryCta.ariaLabel}>
+              <a
+                href="#register"
+                aria-label={content.hero.secondaryCta.ariaLabel}
+              >
                 {content.hero.secondaryCta.label}
               </a>
             </Button>

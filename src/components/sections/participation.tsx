@@ -27,9 +27,17 @@ export function ParticipationSection() {
                 aria-label="Participation details"
               >
                 {content.participation.items.map((item, i) => {
-                  const dotColors = ["bg-blue-400", "bg-emerald-400", "bg-yellow-400", "bg-sky-400"];
+                  const dotColors = [
+                    "bg-blue-400",
+                    "bg-emerald-400",
+                    "bg-yellow-400",
+                    "bg-sky-400",
+                  ];
                   return (
-                    <li key={item} className="flex gap-3 text-base text-zinc-700">
+                    <li
+                      key={item}
+                      className="flex gap-3 text-base text-zinc-700"
+                    >
                       <span
                         className={`mt-2 inline-block h-2 w-2 shrink-0 rounded-full ${dotColors[i % 4]}`}
                         aria-hidden

@@ -131,7 +131,8 @@ export const content = {
       "The symposium includes panel discussions, special lectures, and the Research Workshop on Day 3 (28 February), focused on mapping the Progressive Writers\u2019 Movement across South Asia.",
       "The Valedictory Address will be delivered by Ipshita Chanda (Professor, Comparative Literature and India Studies, EFLU Hyderabad). A plenary lecture will be delivered by P. P. Raveendran (Professor (Retd.), School of Letters, Mahatma Gandhi University).",
     ],
-    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform",
+    registrationUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform",
     registerButtonLabel: "Register for Symposium",
     registerButtonAria: "Register for the Symposium (opens in a new tab)",
     flyerUrl: "/flyer.pdf",
@@ -174,7 +175,8 @@ export const content = {
           src: "/images/speaker-1.jpeg",
           alt: "Portrait of Judhajit Sarkar",
         },
-        profileUrl: "https://www.sai.uni-heidelberg.de/en/departments-and-branches/modern-south-asian-languages-and-literatures/team/judhajit-sarkar-ma",
+        profileUrl:
+          "https://www.sai.uni-heidelberg.de/en/departments-and-branches/modern-south-asian-languages-and-literatures/team/judhajit-sarkar-ma",
       },
       {
         name: "P. P. Raveendran",

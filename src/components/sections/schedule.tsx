@@ -49,7 +49,12 @@ export function ScheduleSection() {
                   <div className="mt-5 border-l-2 border-blue-200 pl-5">
                     <ul className="space-y-3">
                       {day.items.map((item, idx) => {
-                        const dotColors = ["bg-blue-400", "bg-emerald-400", "bg-yellow-400", "bg-sky-400"];
+                        const dotColors = [
+                          "bg-blue-400",
+                          "bg-emerald-400",
+                          "bg-yellow-400",
+                          "bg-sky-400",
+                        ];
                         return (
                           <li
                             key={item}

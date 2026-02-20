@@ -34,16 +34,23 @@ export function AboutSection() {
           {/* Info box */}
           <div className="mt-8 inline-flex flex-col gap-3 rounded-2xl border border-blue-200 bg-blue-50 px-6 py-5 shadow-sm">
             <p className="text-sm font-semibold text-blue-800">
-              {content.event.partOfSymposiumNote.replace(".", "")} (26–28 February).
+              {content.event.partOfSymposiumNote.replace(".", "")} (26–28
+              February).
             </p>
             <div className="flex flex-col gap-1.5 text-sm text-blue-700">
               <span className="flex items-center gap-2">
                 <span aria-hidden>📅</span>
-                <span><span className="font-medium">Date:</span> 28 February 2026 (Day 3)</span>
+                <span>
+                  <span className="font-medium">Date:</span> 28 February 2026
+                  (Day 3)
+                </span>
               </span>
               <span className="flex items-center gap-2">
                 <span aria-hidden>📍</span>
-                <span><span className="font-medium">Venue:</span> Department of Humanities and Social Sciences, BITS Pilani, Hyderabad Campus</span>
+                <span>
+                  <span className="font-medium">Venue:</span> Department of
+                  Humanities and Social Sciences, BITS Pilani, Hyderabad Campus
+                </span>
               </span>
             </div>
           </div>
