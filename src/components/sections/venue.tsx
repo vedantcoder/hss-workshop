@@ -19,7 +19,7 @@ export function VenueSection() {
   return (
     <section
       id="venue"
-      className="scroll-mt-24 bg-zinc-100"
+      className="scroll-mt-24 bg-yellow-50"
       aria-labelledby="venue-title"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">

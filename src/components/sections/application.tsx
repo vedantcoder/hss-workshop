@@ -19,7 +19,7 @@ export function ApplicationSection() {
         <FadeIn>
           <h2
             id="application-title"
-            className="text-3xl font-bold tracking-tight text-zinc-900"
+            className="section-heading-accent text-3xl font-bold tracking-tight text-zinc-900"
           >
             {content.application.heading}
           </h2>

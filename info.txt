@@ -44,3 +44,16 @@ Dietery Preference
 Veg
 Non Veg
 If you are an outstation PhD scholar and require accommodation, please indicate the dates when you require accommodation.
+
+
+hero
+about the symposium (flyer) 
+and then registration for symposium - google form link (https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform)
+about the workshop 
+and then registration for workshop - google form link (https://forms.gle/x9sNRUtWQfedyfGU9)
+speakers
+workshop schedule
+participation details
+venue
+faq
+footer

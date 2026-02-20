@@ -7,6 +7,7 @@ export type Speaker = {
     src: string;
     alt: string;
   };
+  profileUrl?: string;
 };
 
 export type ScheduleDay = {
@@ -46,6 +47,8 @@ export const content = {
 
     loadingForm: "Loading form…",
     loadingFormAria: "Loading registration form",
+    loadingFlyer: "Loading flyer…",
+    loadingFlyerAria: "Loading event flyer",
     loadingMap: "Loading map…",
     loadingMapAria: "Loading map",
 
@@ -57,11 +60,14 @@ export const content = {
 
   nav: {
     brand: "Research Workshop",
+    brandSubtitle1: "Department of Humanities and Social Sciences",
+    brandSubtitle2: "BITS Pilani, Hyderabad Campus",
     logo: {
       src: "/images/bits-logo.png",
       alt: "BITS Pilani, Hyderabad Campus logo",
     },
     items: [
+      { label: "Symposium", href: "#symposium" },
       { label: "About", href: "#about" },
       { label: "Speakers", href: "#speakers" },
       { label: "Schedule", href: "#schedule" },
@@ -72,22 +78,22 @@ export const content = {
     ],
     registerButton: {
       label: "Register",
-      href: "https://forms.gle/W8xs2FeUwd8x8o1h8",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform",
     },
   },
 
   hero: {
     kicker: "Research Workshop",
     primaryCta: {
-      label: "Register Now",
-      ariaLabel: "Register now (opens in a new tab)",
+      label: "Register for Symposium",
+      ariaLabel: "Register for the Symposium (opens in a new tab)",
     },
     secondaryCta: {
-      label: "View Details",
-      ariaLabel: "View details",
+      label: "Register for Workshop",
+      ariaLabel: "Register for the Workshop",
     },
     symposiumNote:
-      "Part of a three-day symposium on doing research (26–28 February).",
+      "Part of a three-day Symposium on Doing Research (26\u201328 February).",
     infoLabels: {
       date: "Date",
       venue: "Venue",
@@ -98,17 +104,17 @@ export const content = {
   event: {
     title: "Research Workshop: Mapping the Progressive Writers’ Movement",
     subtitle: "3-day Symposium on Doing Research",
-    date: "28 February",
+    date: "Day 3: 28 February 2026",
     location: {
       line1: "BITS Pilani, Hyderabad Campus",
       line2: "",
     },
     shortDescription:
-      "A focused workshop aimed at creating a research cluster to map the Progressive Writers’ Movement across languages, regions, and archives.",
+      "A focused workshop that aims to create a research cluster to map the Progressive Writers\u2019 Movement across languages, regions, and archives",
     detailedDescription:
       "A focused workshop aimed at creating a research cluster to map the Progressive Writers’ Movement will be held at the Department of Humanities and Social Sciences, BITS Pilani, Hyderabad Campus, on 28 February. The workshop seeks to bring together scholars from diverse linguistic and regional backgrounds across South Asia to foster long-term collaboration leading to sustained and varied research outputs. Participants will collectively explore methods, archival resources, and collaborative frameworks for studying the Progressive Writers’ Movement in their own regional milieu and across languages and regions.",
     ledBy:
-      "The workshop will be led by Judhajit Sarkar (Assistant Professor, Heidelberg University) and Tony Sebastian, PhD (Assistant Professor, BITS Pilani, Hyderabad Campus).",
+      "The workshop will be led by Tony Sebastian (Assistant Professor, BITS Pilani, Hyderabad Campus) and Judhajit Sarkar (Assistant Professor, Heidelberg University).",
     partOfSymposiumNote:
       "This workshop forms part of a three-day Symposium on Doing Research.",
     symposiumDays: [
@@ -118,13 +124,29 @@ export const content = {
     ],
   },
 
+  symposium: {
+    heading: "About the Symposium",
+    body: [
+      "The three-day Symposium on Doing Research (26\u201328 February 2026) brings together researchers and scholars to reflect on research methodologies, archival practices, and collaborative frameworks across disciplines.",
+      "The symposium includes panel discussions, special lectures, and the Research Workshop on Day 3 (28 February), focused on mapping the Progressive Writers\u2019 Movement across South Asia.",
+      "The Valedictory Address will be delivered by Ipshita Chanda (Professor, Comparative Literature and India Studies, EFLU Hyderabad). A plenary lecture will be delivered by P. P. Raveendran (Professor (Retd.), School of Letters, Mahatma Gandhi University).",
+    ],
+    registrationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform",
+    registerButtonLabel: "Register for Symposium",
+    registerButtonAria: "Register for the Symposium (opens in a new tab)",
+    flyerUrl: "/flyer.pdf",
+    flyerEmbedTitle: "Symposium flyer / programme",
+    flyerOpenLabel: "Open Flyer",
+    flyerOpenAria: "Open symposium flyer in a new tab",
+  },
+
   about: {
     heading: "About the workshop",
     body: [
-      "A focused workshop aimed at creating a research cluster to map the Progressive Writers’ Movement will be held at the Department of Humanities and Social Sciences, BITS Pilani, Hyderabad Campus, on 28 February.",
+      "This workshop aims to create a research cluster to map the Progressive Writers\u2019 Movement. It will be held at the Department of Humanities and Social Sciences, BITS Pilani, Hyderabad Campus, on 28 February 2026.",
       "The workshop seeks to bring together scholars from diverse linguistic and regional backgrounds across South Asia to foster long-term collaboration leading to sustained and varied research outputs.",
-      "Participants will collectively explore methods, archival resources, and collaborative frameworks for studying the Progressive Writers’ Movement in their own regional milieu and across languages and regions.",
-      "The workshop will be led by Judhajit Sarkar (Assistant Professor, Heidelberg University) and Tony Sebastian, PhD (Assistant Professor, BITS Pilani, Hyderabad Campus).",
+      "Participants will collectively explore methods, archival resources, and collaborative frameworks for studying the Progressive Writers\u2019 Movement in their own regional milieu and across languages and regions.",
+      "The workshop will be led by Tony Sebastian (Assistant Professor, BITS Pilani, Hyderabad Campus) and Judhajit Sarkar (Assistant Professor, Heidelberg University).",
       "This workshop forms part of a three-day Symposium on Doing Research (26–28 February).",
     ],
   },
@@ -133,24 +155,26 @@ export const content = {
     heading: "Speakers",
     people: [
       {
+        name: "Tony Sebastian",
+        designation: "Assistant Professor",
+        institution: "BITS Pilani, Hyderabad Campus",
+        role: "Workshop lead",
+        image: {
+          src: "/images/speaker-2.jpeg",
+          alt: "Portrait of Tony Sebastian",
+        },
+        profileUrl: "https://www.bits-pilani.ac.in/hyderabad/tony-sebastian/",
+      },
+      {
         name: "Judhajit Sarkar",
         designation: "Assistant Professor",
         institution: "Heidelberg University",
         role: "Speaker",
         image: {
-          src: "/images/speaker-placeholder.svg",
-          alt: "Portrait placeholder for Judhajit Sarkar",
+          src: "/images/speaker-1.jpeg",
+          alt: "Portrait of Judhajit Sarkar",
         },
-      },
-      {
-        name: "Tony Sebastian, PhD",
-        designation: "Assistant Professor",
-        institution: "BITS Pilani, Hyderabad Campus",
-        role: "Workshop lead",
-        image: {
-          src: "/images/speaker-placeholder.svg",
-          alt: "Portrait placeholder for Tony Sebastian",
-        },
+        profileUrl: "https://www.sai.uni-heidelberg.de/en/departments-and-branches/modern-south-asian-languages-and-literatures/team/judhajit-sarkar-ma",
       },
       {
         name: "P. P. Raveendran",
@@ -158,9 +182,10 @@ export const content = {
         institution: "School of Letters, Mahatma Gandhi University",
         role: "Plenary lecture (post-workshop)",
         image: {
-          src: "/images/speaker-placeholder.svg",
-          alt: "Portrait placeholder for P. P. Raveendran",
+          src: "/images/speaker-3.jpeg",
+          alt: "Portrait of P. P. Raveendran",
         },
+        profileUrl: "https://sol.mgu.ac.in/dr-p-p-raveendran/",
       },
       {
         name: "Ipshita Chanda",
@@ -168,9 +193,10 @@ export const content = {
         institution: "Comparative Literature and India Studies, EFLU Hyderabad",
         role: "Valedictory address (symposium conclusion)",
         image: {
-          src: "/images/speaker-placeholder.svg",
-          alt: "Portrait placeholder for Ipshita Chanda",
+          src: "/images/speaker-4.jpeg",
+          alt: "Portrait of Ipshita Chanda",
         },
+        profileUrl: "https://www.efluniversity.ac.in/Prof.IpshitaChanda.php",
       },
     ] satisfies Speaker[],
   },
@@ -186,11 +212,10 @@ export const content = {
         title: "Research Workshop",
         highlight: "Workshop Day",
         items: [
-          "Mapping the Progressive Writers’ Movement: methods and resources",
-          "Collaborative frameworks for longer-term research outputs",
-          "Online participation (for the workshop only, not the full symposium) may be considered based on the expression of interest",
-          "The workshop will be followed by a plenary lecture by P. P. Raveendran (Professor (Retd.), School of Letters, Mahatma Gandhi University)",
-          "The Valedictory Address concluding the three-day Symposium will be delivered by Ipshita Chanda (Professor, Comparative Literature and India Studies, EFLU Hyderabad)",
+          "Pre-workshop Plenary Lecture \u2014 Judhajit Sarkar (Assistant Professor, Heidelberg University)",
+          "Workshop Session: Mapping the Progressive Writers\u2019 Movement \u2014 Methods and Resources",
+          "Post-Workshop Plenary Lecture \u2014 P. P. Raveendran (Professor (Retd.), School of Letters, Mahatma Gandhi University)",
+          "Valedictory Address concluding the three-day Symposium \u2014 Ipshita Chanda (Professor, Comparative Literature and India Studies, EFLU Hyderabad)",
         ],
       },
     ] satisfies ScheduleDay[],
@@ -202,14 +227,13 @@ export const content = {
       "Registration is free of charge.",
       "Hospitality: Limited accommodation (first-come, first-served) for participants travelling from outside Hyderabad.",
       "Working lunches will be provided on all three days of the Symposium.",
-      "Online participation (for the workshop only, not the full symposium) may be considered based on the expression of interest.",
       "Registration is mandatory for issue of participation certificates.",
     ],
   },
 
   application: {
     heading: "Application process",
-    email: "tony.sebastian@hyderabad.bits-pilani.ac.in",
+    email: "progressivewriter26@gmail.com",
     steps: [
       {
         title: "Step 1 — Register using the form",
@@ -228,17 +252,18 @@ export const content = {
   },
 
   registration: {
-    heading: "Register",
-    formUrl: "https://forms.gle/W8xs2FeUwd8x8o1h8",
+    heading: "Register for the Workshop",
+    formUrl: "https://forms.gle/x9sNRUtWQfedyfGU9",
+    workshopFormUrl: "https://forms.gle/x9sNRUtWQfedyfGU9",
     openButtonLabel: "Open Registration Form",
-    embedTitle: "Registration form",
+    embedTitle: "Workshop registration form",
     description:
       "Free registration. Please use the form below or open it in a new tab.",
     embedFallback:
-      "If the embedded form does not load in your browser, use “Open Registration Form”.",
+      "If the embedded form does not load in your browser, use \u201cOpen Registration Form\u201d.",
     formWhatItAsks: {
       heading: "What the registration form asks for",
-      formTitle: "State of Arts — Three-day symposium on doing research",
+      formTitle: "State of Arts \u2014 Three-day symposium on doing research",
       items: [
         "Email address",
         "Name and affiliation",
@@ -280,7 +305,7 @@ export const content = {
       {
         question: "Can I attend online?",
         answer:
-          "Online participation is possible for the workshop (Day 3), based on an expression of interest.",
+          "Online participation is possible for the workshop (Day 3) only, not for the symposium. Selection is based on the Expression of Interest (EoI) submitted. Participants selected for virtual participation will be notified in advance with the Google Meet link.",
       },
       {
         question: "Will I get a certificate?",
@@ -292,6 +317,7 @@ export const content = {
   footer: {
     institution: "BITS Pilani, Hyderabad Campus",
     quickLinks: [
+      { label: "Symposium", href: "#symposium" },
       { label: "About", href: "#about" },
       { label: "Speakers", href: "#speakers" },
       { label: "Schedule", href: "#schedule" },

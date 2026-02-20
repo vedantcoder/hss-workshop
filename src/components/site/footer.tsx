@@ -4,17 +4,17 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-zinc-200/80 bg-white">
+    <footer className="border-t border-blue-900 bg-blue-950">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <p className="text-sm font-semibold text-zinc-900">
+            <p className="text-sm font-semibold text-blue-200">
               {content.ui.footerContactTitle}
             </p>
-            <p className="mt-2 text-sm text-zinc-600">
+            <p className="mt-2 text-sm text-blue-300">
               <a
                 href={`mailto:${content.application.email}`}
-                className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700"
+                className="font-medium text-white underline underline-offset-4 hover:text-blue-200"
               >
                 {content.application.email}
               </a>
@@ -22,16 +22,16 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-zinc-900">
+            <p className="text-sm font-semibold text-blue-200">
               {content.ui.footerInstitutionTitle}
             </p>
-            <p className="mt-2 text-sm text-zinc-600">
+            <p className="mt-2 text-sm text-blue-300">
               {content.footer.institution}
             </p>
           </div>
 
           <div>
-            <p className="text-sm font-semibold text-zinc-900">
+            <p className="text-sm font-semibold text-blue-200">
               {content.ui.footerQuickLinksTitle}
             </p>
             <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
@@ -39,7 +39,7 @@ export function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-zinc-600 underline underline-offset-4 hover:text-zinc-900"
+                    className="text-blue-300 underline underline-offset-4 hover:text-white"
                   >
                     {item.label}
                   </a>
@@ -49,7 +49,7 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 text-xs text-zinc-500">
+        <p className="mt-10 text-xs text-blue-400">
           © {year} {content.event.title}
         </p>
       </div>

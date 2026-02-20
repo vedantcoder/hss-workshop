@@ -14,7 +14,7 @@ export function ScheduleSection() {
         <FadeIn>
           <h2
             id="schedule-title"
-            className="text-3xl font-bold tracking-tight text-zinc-900"
+            className="section-heading-accent text-3xl font-bold tracking-tight text-zinc-900"
           >
             {content.schedule.heading}
           </h2>
@@ -46,20 +46,23 @@ export function ScheduleSection() {
                     {day.highlight ? <Badge>{day.highlight}</Badge> : null}
                   </div>
 
-                  <div className="mt-5 border-l-2 border-zinc-200 pl-5">
+                  <div className="mt-5 border-l-2 border-blue-200 pl-5">
                     <ul className="space-y-3">
-                      {day.items.map((item) => (
-                        <li
-                          key={item}
-                          className="relative text-sm text-zinc-700"
-                        >
-                          <span
-                            className="absolute -left-[1.45rem] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-zinc-300 bg-white"
-                            aria-hidden
-                          />
-                          {item}
-                        </li>
-                      ))}
+                      {day.items.map((item, idx) => {
+                        const dotColors = ["bg-blue-400", "bg-emerald-400", "bg-yellow-400", "bg-sky-400"];
+                        return (
+                          <li
+                            key={item}
+                            className="relative text-sm text-zinc-700"
+                          >
+                            <span
+                              className={`absolute -left-[1.45rem] top-1.5 h-2.5 w-2.5 rounded-full ${dotColors[idx % 4]}`}
+                              aria-hidden
+                            />
+                            {item}
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                 </CardContent>

@@ -18,7 +18,7 @@ export function FaqSection() {
         <FadeIn>
           <h2
             id="faq-title"
-            className="text-3xl font-bold tracking-tight text-zinc-900"
+            className="section-heading-accent text-3xl font-bold tracking-tight text-zinc-900"
           >
             {content.faq.heading}
           </h2>

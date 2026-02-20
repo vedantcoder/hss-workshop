@@ -8,7 +8,7 @@ export function RegisterSection() {
   return (
     <section
       id="register"
-      className="scroll-mt-24 bg-zinc-100"
+      className="scroll-mt-24 bg-sky-50"
       aria-labelledby="register-title"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -68,26 +68,6 @@ export function RegisterSection() {
           <p className="mt-3 text-xs text-zinc-500">
             {content.registration.embedFallback}
           </p>
-
-          <div className="mt-8 rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm">
-            <h3 className="text-sm font-semibold text-zinc-900">
-              {content.registration.formWhatItAsks.heading}
-            </h3>
-            <p className="mt-2 text-sm text-zinc-600">
-              {content.registration.formWhatItAsks.formTitle}
-            </p>
-            <ul
-              className="mt-4 space-y-2"
-              aria-label={content.registration.formWhatItAsks.heading}
-            >
-              {content.registration.formWhatItAsks.items.map((item) => (
-                <li key={item} className="text-sm text-zinc-700">
-                  <span className="mr-2 text-zinc-400">•</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </section>
