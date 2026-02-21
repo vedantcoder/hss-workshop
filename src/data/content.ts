@@ -304,6 +304,16 @@ export const content = {
         question: "Will I get a certificate?",
         answer: "Certificates are issued only to registered participants.",
       },
+      {
+        question: "What is the registration deadline?",
+        answer:
+          "The deadline to register for the symposium (Days 1–3) is 22 February. Registration for the workshop (Day 3) is open until the day of the event.",
+      },
+      {
+        question: "What is the aim of the workshop?",
+        answer:
+          "The workshop aims to build a multilingual research cluster to work on the Progressive Writers\u2019 Movement across languages, regions, and archives in South Asia.",
+      },
     ] satisfies FaqItem[],
   },
 
