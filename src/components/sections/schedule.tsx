@@ -18,15 +18,9 @@ export function ScheduleSection() {
           >
             {content.schedule.heading}
           </h2>
-          <p className="mt-3 max-w-prose text-sm leading-relaxed text-zinc-600">
-            {content.schedule.subheading}
-          </p>
-          <p className="mt-2 max-w-prose text-sm leading-relaxed text-zinc-600">
-            {content.schedule.note}
-          </p>
         </FadeIn>
 
-        <ol className="mt-10" aria-label="Workshop agenda">
+        <ol className="mt-10" aria-label="Workshop schedule">
           {content.schedule.days.map((day) => (
             <li key={day.date} className="relative">
               <Card className="h-full w-full">

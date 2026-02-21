@@ -85,12 +85,12 @@ export const content = {
   hero: {
     kicker: "Research Workshop",
     primaryCta: {
-      label: "Register for Symposium",
-      ariaLabel: "Register for the Symposium (opens in a new tab)",
-    },
-    secondaryCta: {
       label: "Register for Workshop",
       ariaLabel: "Register for the Workshop",
+    },
+    secondaryCta: {
+      label: "Register for Symposium",
+      ariaLabel: "Register for the Symposium (opens in a new tab)",
     },
     symposiumNote:
       "Part of a three-day Symposium on Doing Research (26\u201328 February).",
@@ -148,7 +148,6 @@ export const content = {
       "The workshop seeks to bring together scholars from diverse linguistic and regional backgrounds across South Asia to foster long-term collaboration leading to sustained and varied research outputs.",
       "Participants will collectively explore methods, archival resources, and collaborative frameworks for studying the Progressive Writers\u2019 Movement in their own regional milieu and across languages and regions.",
       "The workshop will be led by Tony Sebastian (Assistant Professor, BITS Pilani, Hyderabad Campus) and Judhajit Sarkar (Assistant Professor, Heidelberg University).",
-      "This workshop forms part of a three-day Symposium on Doing Research (26–28 February).",
     ],
   },
 
@@ -204,9 +203,7 @@ export const content = {
   },
 
   schedule: {
-    heading: "Workshop schedule / agenda",
-    subheading: "Programme highlights for the workshop on 28 February.",
-    note: "A detailed programme will be shared with registered participants.",
+    heading: "Workshop schedule",
     days: [
       {
         dayLabel: "Workshop",
@@ -227,7 +224,7 @@ export const content = {
     heading: "Participation details",
     items: [
       "Registration is free of charge.",
-      "Hospitality: Limited accommodation (first-come, first-served) for participants travelling from outside Hyderabad.",
+      "The workshop follows a hybrid format — both in-person and online participation are available.",
       "Working lunches will be provided on all three days of the Symposium.",
       "Registration is mandatory for issue of participation certificates.",
     ],
@@ -272,7 +269,6 @@ export const content = {
         "Which day(s) you will attend (Day 1, Day 2, Day 3, combinations, or all three days)",
         "If attending Day 2, your preference for the parallel session",
         "Dietary preference",
-        "If you are an outstation PhD scholar and require accommodation, the dates you require accommodation",
       ],
     },
   },
@@ -300,14 +296,9 @@ export const content = {
         answer: "No. Registration is free.",
       },
       {
-        question: "Is accommodation available?",
-        answer:
-          "Limited accommodation is available for outstation PhD scholars on a first-come, first-served basis.",
-      },
-      {
         question: "Can I attend online?",
         answer:
-          "Online participation is possible for the workshop (Day 3) only, not for the symposium. Selection is based on the Expression of Interest (EoI) submitted. Participants selected for virtual participation will be notified in advance with the Google Meet link.",
+          "Online participation is available for the workshop (Day 3) only. Selected virtual participants will be notified in advance with the Google Meet link.",
       },
       {
         question: "Will I get a certificate?",

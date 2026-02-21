@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import { content } from "@/data/content";
 import { FadeIn } from "@/components/motion/fade-in";
-import { Button } from "@/components/ui/button";
 
 export function SymposiumSection() {
   return (
@@ -21,23 +20,6 @@ export function SymposiumSection() {
           >
             {content.symposium.heading}
           </h2>
-
-          <div className="mt-6">
-            <Button
-              asChild
-              size="lg"
-              className="bg-blue-600 text-white shadow-md hover:bg-blue-700"
-            >
-              <a
-                href={content.symposium.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={content.symposium.registerButtonAria}
-              >
-                {content.symposium.registerButtonLabel}
-              </a>
-            </Button>
-          </div>
 
           {/* Flyer image */}
           <div className="mt-10 overflow-hidden rounded-2xl border border-blue-100 shadow-lg">

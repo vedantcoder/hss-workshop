@@ -53,9 +53,7 @@ export function HeroSection() {
               className="bg-yellow-400 font-semibold text-yellow-900 shadow-xl hover:bg-yellow-300"
             >
               <a
-                href={content.symposium.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
+                href="#register"
                 aria-label={content.hero.primaryCta.ariaLabel}
               >
                 {content.hero.primaryCta.label}
@@ -67,7 +65,9 @@ export function HeroSection() {
               className="bg-white font-semibold text-blue-700 shadow-xl hover:bg-blue-50"
             >
               <a
-                href="#register"
+                href={content.symposium.registrationUrl}
+                target="_blank"
+                rel="noreferrer"
                 aria-label={content.hero.secondaryCta.ariaLabel}
               >
                 {content.hero.secondaryCta.label}
