@@ -59,20 +59,6 @@ export function HeroSection() {
                 {content.hero.primaryCta.label}
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              className="bg-white font-semibold text-blue-700 shadow-xl hover:bg-blue-50"
-            >
-              <a
-                href={content.symposium.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={content.hero.secondaryCta.ariaLabel}
-              >
-                {content.hero.secondaryCta.label}
-              </a>
-            </Button>
           </div>
         </FadeIn>
       </div>

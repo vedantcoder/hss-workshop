@@ -88,10 +88,6 @@ export const content = {
       label: "Register for Workshop",
       ariaLabel: "Register for the Workshop",
     },
-    secondaryCta: {
-      label: "Register for Symposium",
-      ariaLabel: "Register for the Symposium (opens in a new tab)",
-    },
     symposiumNote:
       "Part of a three-day Symposium on Doing Research (26\u201328 February).",
     infoLabels: {
@@ -131,10 +127,6 @@ export const content = {
       "The symposium includes panel discussions, special lectures, and the Research Workshop on Day 3 (28 February), focused on mapping the Progressive Writers\u2019 Movement across South Asia.",
       "The Valedictory Address will be delivered by Ipshita Chanda (Professor, Comparative Literature and India Studies, EFLU Hyderabad). A plenary lecture will be delivered by P. P. Raveendran (Professor (Retd.), School of Letters, Mahatma Gandhi University).",
     ],
-    registrationUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfjgxVQmeXg9SB_fKZXb-3DZ04dtgaF06YDIeWh96zHk5e8xA/viewform",
-    registerButtonLabel: "Register for Symposium",
-    registerButtonAria: "Register for the Symposium (opens in a new tab)",
     flyerUrl: "/flyer.pdf",
     flyerEmbedTitle: "Symposium flyer / programme",
     flyerOpenLabel: "Open Flyer",
