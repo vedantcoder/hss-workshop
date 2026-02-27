@@ -10,7 +10,7 @@ type Props = { params: Promise<{ id: string }> };
 
 function getSession(id: string): SessionFlyer | undefined {
   return (content.sessions.items as readonly SessionFlyer[]).find(
-    (s) => s.id === id
+    (s) => s.id === id,
   );
 }
 

@@ -115,7 +115,9 @@ export function FlyerCarouselModal() {
                   aria-label={`Go to flyer ${i + 1}`}
                   className={cn(
                     "w-2 h-2 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400",
-                    i === index ? "bg-gray-800" : "bg-gray-300 hover:bg-gray-500"
+                    i === index
+                      ? "bg-gray-800"
+                      : "bg-gray-300 hover:bg-gray-500",
                   )}
                 />
               ))}

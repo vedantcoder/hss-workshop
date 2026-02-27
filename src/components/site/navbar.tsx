@@ -119,7 +119,10 @@ export function Navbar() {
       >
         <div className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
           <div className="rounded-xl border border-white/10 bg-blue-900 p-2 shadow-lg">
-            <nav aria-label={content.ui.mobileNavAria} className="flex flex-col">
+            <nav
+              aria-label={content.ui.mobileNavAria}
+              className="flex flex-col"
+            >
               {items.map((item) => (
                 <a
                   key={item.href}
