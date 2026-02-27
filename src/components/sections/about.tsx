@@ -1,5 +1,6 @@
 import { content } from "@/data/content";
 import { FadeIn } from "@/components/motion/fade-in";
+import { FlyerCarouselInline } from "@/components/ui/flyer-carousel-inline";
 
 export function AboutSection() {
   return (
@@ -54,6 +55,8 @@ export function AboutSection() {
               </span>
             </div>
           </div>
+
+          <FlyerCarouselInline />
         </FadeIn>
       </div>
     </section>

@@ -1,3 +1,11 @@
+export type SessionFlyer = {
+  id: string;
+  title: string;
+  date: string;
+  description: string;
+  image: { src: string; alt: string };
+};
+
 export type Speaker = {
   name: string;
   designation: string;
@@ -307,6 +315,35 @@ export const content = {
           "The workshop aims to build a multilingual research cluster to work on the Progressive Writers\u2019 Movement across languages, regions, and archives in South Asia.",
       },
     ] satisfies FaqItem[],
+  },
+
+  sessions: {
+    heading: "Event Flyers",
+    backLabel: "Back to home",
+    viewLabel: "View Flyer",
+    items: [
+      {
+        id: "1",
+        title: "Workshop Session 1",
+        date: "28 February 2026",
+        description: "Flyer for Workshop Session 1.",
+        image: { src: "/images/10.png", alt: "Workshop Session 1 flyer" },
+      },
+      {
+        id: "2",
+        title: "Workshop Session 2",
+        date: "28 February 2026",
+        description: "Flyer for Workshop Session 2.",
+        image: { src: "/images/11.png", alt: "Workshop Session 2 flyer" },
+      },
+      {
+        id: "3",
+        title: "Workshop Session 3",
+        date: "28 February 2026",
+        description: "Flyer for Workshop Session 3.",
+        image: { src: "/images/12.png", alt: "Workshop Session 3 flyer" },
+      },
+    ] satisfies SessionFlyer[],
   },
 
   footer: {

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { content } from "@/data/content";
 import { cn } from "@/lib/utils";
@@ -18,6 +19,16 @@ export function Navbar() {
   }, []);
 
   const items = content.nav.items;
+  const desktopPrimaryItems = items.filter((item) =>
+    ["Symposium", "About", "Speakers", "Schedule", "Register"].includes(
+      item.label,
+    ),
+  );
+  const sessionItems = [
+    { label: "Session 1", href: "/session-1" },
+    { label: "Session 2", href: "/session-2" },
+    { label: "Session 3", href: "/session-3" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-blue-900/20 bg-blue-950 shadow-md">
@@ -53,20 +64,36 @@ export function Navbar() {
           </span>
         </a>
 
-        <nav
-          className="hidden items-center gap-1 md:flex"
-          aria-label={content.ui.primaryNavAria}
-        >
-          {items.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-lg px-3 py-2 text-sm text-blue-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden items-center gap-3 md:flex">
+          <nav
+            className="flex items-center gap-1"
+            aria-label={content.ui.primaryNavAria}
+          >
+            {desktopPrimaryItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="rounded-lg px-3 py-2 text-sm text-blue-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="h-6 w-px bg-white/20" aria-hidden />
+
+          <nav className="flex items-center gap-1" aria-label="Session pages">
+            {sessionItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-lg border border-white/20 bg-white/5 px-2.5 py-1.5 text-xs font-medium text-white transition-colors hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <div className="md:hidden">
           <button
@@ -92,7 +119,7 @@ export function Navbar() {
       >
         <div className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
           <div className="rounded-xl border border-white/10 bg-blue-900 p-2 shadow-lg">
-            <nav aria-label="Mobile" className="flex flex-col">
+            <nav aria-label={content.ui.mobileNavAria} className="flex flex-col">
               {items.map((item) => (
                 <a
                   key={item.href}
@@ -102,6 +129,22 @@ export function Navbar() {
                 >
                   {item.label}
                 </a>
+              ))}
+
+              <div className="my-2 h-px bg-white/10" aria-hidden />
+              <p className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-300">
+                Session Posters
+              </p>
+
+              {sessionItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-lg px-3 py-2 text-sm text-blue-100 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
               ))}
             </nav>
           </div>

@@ -10,12 +10,14 @@ import { ParticipationSection } from "@/components/sections/participation";
 import { RegisterSection } from "@/components/sections/register";
 import { VenueSection } from "@/components/sections/venue";
 import { FaqSection } from "@/components/sections/faq";
+import { FlyerCarouselModal } from "@/components/ui/flyer-carousel-modal";
 
 export const dynamic = "force-static";
 
 export default function Home() {
   return (
     <div className="min-h-dvh bg-white">
+      <FlyerCarouselModal />
       <Navbar />
       <main id="main" className="min-h-dvh">
         <HeroSection />
